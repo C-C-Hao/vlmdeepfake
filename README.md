@@ -143,59 +143,24 @@ VLM_Deepfake_Detection_Project/
 ├── configs/
 │   ├── datasets/          # Dataset configurations
 │   └── trainers/          # Training configurations
-├── data/                  # Dataset directory
-├── results/               # Output directory
+├── results/               # 
 ├── requirements.txt       # Dependencies
 ├── run_experiment.sh      # One-command reproduction
 └── README.md             # This file
 ```
 
-## 🔬 Methodology
+## Pre-trained weights 
 
-### Parameter-Efficient Fine-Tuning (PEFT)
-- **Adapter Networks**: Small neural networks inserted between CLIP layers
-- **Frozen Backbone**: CLIP weights remain unchanged
-- **Efficient Training**: Only 0.59M parameters vs. 400M+ in full fine-tuning
+```
+results/training/clip_adapter/model.pth.tar-50
+```
 
-### Cross-Forgery Evaluation Protocol
-1. **Training**: Real + FaceSwap only
-2. **Validation**: Real + FaceSwap (performance monitoring)
-3. **Testing**: Real + FaceSwap + NeuralTextures (generalization test)
-4. **Paired Analysis**: Direct comparison on same video content
+## Training log
 
-### Evaluation Metrics
-- **Accuracy**: Overall classification performance
-- **AUC**: Area Under ROC Curve
-- **F1 Score**: Balanced precision-recall metric
-- **Cross-Domain Gap**: Performance difference between domains
+```
+results/training/log.txt
+```
 
-## 📊 Detailed Results
-
-### Training Progression (50 Epochs)
-- **Epoch 1**: 55% accuracy (warmup)
-- **Epoch 10**: 95% accuracy (rapid learning)
-- **Epoch 30**: 98% accuracy (convergence)
-- **Epoch 50**: 98.7% accuracy (final)
-
-### Cross-Forgery Performance
-| Forgery Type | Samples | Accuracy | AUC | F1 Score |
-|--------------|---------|----------|-----|----------|
-| FaceSwap | 1,010 | 93.5% | 0.987 | 0.934 |
-| NeuralTextures | 10,100 | 80.9% | 0.891 | 0.798 |
-| **Overall** | **11,110** | **82.1%** | **0.901** | **0.812** |
-
-## 🔍 Analysis & Discussion
-
-### Strengths
-1. **Parameter Efficiency**: 1400x fewer parameters than full fine-tuning
-2. **Strong Performance**: 76.87% accuracy on challenging cross-domain test
-3. **Practical Training**: Reasonable computational requirements
-4. **Comprehensive Evaluation**: Rigorous cross-forgery protocol
-
-### Limitations
-1. **Domain Bias**: 12.6% performance gap between domains
-2. **Limited Forgery Types**: Only evaluated on 2 generation methods
-3. **Dataset Scale**: Relatively small compared to modern standards
 
 
 
