@@ -143,7 +143,7 @@ VLM_Deepfake_Detection_Project/
 ├── configs/
 │   ├── datasets/          # Dataset configurations
 │   └── trainers/          # Training configurations
-├── results/               # 
+├── results/               # Training log and checkpoint
 ├── requirements.txt       # Dependencies
 └── README.md             # This file
 ```
