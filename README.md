@@ -145,7 +145,6 @@ VLM_Deepfake_Detection_Project/
 │   └── trainers/          # Training configurations
 ├── results/               # 
 ├── requirements.txt       # Dependencies
-├── run_experiment.sh      # One-command reproduction
 └── README.md             # This file
 ```
 
