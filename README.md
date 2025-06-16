@@ -197,29 +197,9 @@ VLM_Deepfake_Detection_Project/
 2. **Limited Forgery Types**: Only evaluated on 2 generation methods
 3. **Dataset Scale**: Relatively small compared to modern standards
 
-### Future Work
-1. **More PEFT Methods**: Compare with LoRA, Prompt Tuning
-2. **Larger Scale**: Evaluate on more forgery types and datasets
-3. **Domain Adaptation**: Techniques to reduce cross-domain gap
-4. **Real-world Deployment**: Robustness to compression, noise
+
 
 ## 📚 References
 
-1. Radford, A., et al. "Learning transferable visual representations from natural language supervision." ICML 2021.
-2. Houlsby, N., et al. "Parameter-efficient transfer learning for NLP." ICML 2019.
-3. Rossler, A., et al. "FaceForensics++: Learning to detect manipulated facial images." ICCV 2019.
+1.S. A. Khan and D.-T. Dang-Nguyen, “CLIPping the Deception: Adapting Vision-Language Models for Universal Deepfake Detection,” Feb. 20, 2024, arXiv: arXiv:2402.12927. doi: 10.48550/arXiv.2402.12927
 
-## 📄 Citation
-
-```bibtex
-@article{vlm_deepfake_detection_2024,
-  title={VLM-based Universal Deepfake Detection: A Parameter-Efficient Approach},
-  author={[Your Name]},
-  journal={[Conference/Journal]},
-  year={2024}
-}
-```
-
-## 📞 Contact
-
-For questions or issues, please contact [your-email@domain.com] or open an issue in this repository.
