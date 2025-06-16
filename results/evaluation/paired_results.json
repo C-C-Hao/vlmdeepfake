@@ -1,0 +1,19 @@
+{
+  "metrics": {
+    "faceswap": {
+      "accuracy": 0.9346534653465347,
+      "sample_count": 1010,
+      "f1_score": 0.9346534653465347,
+      "auc": 0.5,
+      "eer": 0.5
+    },
+    "neuraltextures": {
+      "accuracy": 0.808910891089109,
+      "sample_count": 10100,
+      "f1_score": 0.808910891089109,
+      "auc": 0.5,
+      "eer": 0.5
+    }
+  },
+  "video_count": 100
+}
