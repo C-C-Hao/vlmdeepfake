@@ -50,24 +50,6 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-#### 2. Dataset Preparation
-
-**Download FaceForensics++ Dataset:**
-```bash
-# Download Real, FaceSwap, and NeuralTextures
-python download_ff.py --dataset FaceForensics++ --type c23 --compression raw
-```
-
-**Prepare Cross-Forgery Split:**
-```bash
-# Create 80/10/10 split with paired videos
-python src/prepare_cross_forgery_data.py \
-    --input_dir /path/to/faceforensics++ \
-    --output_dir data/ff_cross_forgery \
-    --train_ratio 0.8 \
-    --val_ratio 0.1 \
-    --test_ratio 0.1
-```
 
 Expected directory structure:
 ```
