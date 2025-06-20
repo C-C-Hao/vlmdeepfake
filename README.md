@@ -133,7 +133,7 @@ VLM_Deepfake_Detection_Project/
 ## Pre-trained weights 
 
 ```
-results/training/clip_adapter/model.pth.tar-50
+[results/training/clip_adapter/model.pth.tar-50](https://github.com/C-C-Hao/vlmdeepfake/releases/tag/v1.0.0)
 ```
 
 ## Training log
